@@ -1,0 +1,11 @@
+.box {
+    margin-bottom: 20px;
+    max-width: 32.5%;
+    min-width: 370px;
+    flex-grow: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-bottom: 20px;
+}

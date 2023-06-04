@@ -1,0 +1,12 @@
+.text{
+    margin-bottom: 0px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-top: 0px;
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    font-weight: 300;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.badge {
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 32px;
+    height: 32px;
+}

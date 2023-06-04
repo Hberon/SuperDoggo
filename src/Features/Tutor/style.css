@@ -1,0 +1,28 @@
+.dogsbutton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0px;
+    height: 50px;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.dogsdescription {
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+
+}
+
+.avatar {
+
+}
+
+.dogprofile {
+
+}
+
+.doginfo {
+  
+}
