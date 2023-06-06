@@ -16,8 +16,10 @@ function Tutor ({name, description, avatarSrc, badgeSrc}){
             <div className = "doginfo">
                 <Title text = {name}/>
                 <Badge src = {badgeSrc}/>
-                <Tag text={"1000+ tail wags"}/>
-                <Tag text ={"Superdoggo"} showhat={true}/>
+                <div className = "tags">
+                    <Tag text={"1000+ tail wags"}/>
+                    <Tag text ={"Superdoggo"} showhat={true}/>
+                </div>
             </div>
         </div>
 
