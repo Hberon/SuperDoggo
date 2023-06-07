@@ -1,37 +1,54 @@
 .haticon {
-    width: 16px;
-    margin: 2px 3px 0px;
-    border-radius: 4px;
-    font-size: 10px;
-    color: rgb(119, 119, 119);
-    background: rgb(245, 245, 245);
-    
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 2px;
-    padding-right: 4px;
+  width: 16px;
+  margin: 2px 3px 0px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: rgb(119, 119, 119);
+  background: rgb(245, 245, 245);
+
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 2px;
+  padding-right: 4px;
 }
 .tag {
-    margin: 2px 3px 0px;
-    border-radius: 4px;
-    font-size: 10px;
-    color: rgb(119, 119, 119);
-    background: rgb(245, 245, 245);
-    
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 12px;
-    padding-right: 12px;
-    text-overflow: ellipsis;
-    height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 18px;
 }
 
 .tag-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin: 0px -3px -5px;
+  margin: 2px 3px 0px;
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 18px;
+  color: rgb(119, 119, 119);
+  background: rgb(245, 245, 245);
+  --darkreader-inline-color: #9d9488;
+  --darkreader-inline-bgimage: initial;
+  --darkreader-inline-bgcolor: #1e2021;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  cursor: default;
+  height: 32px;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  font-family: inherit;
+  white-space: nowrap;
+  border-radius: 16px;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #e0e0e0;
 }
-
-
-

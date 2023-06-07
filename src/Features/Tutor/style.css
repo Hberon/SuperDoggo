@@ -1,40 +1,37 @@
 .dogsbutton {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 0px;
-    height: 50px;
-    border-bottom-right-radius: inherit;
-    border-bottom-left-radius: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 0px;
+  height: 50px;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
 }
 
 .dogsdescription {
   padding-right: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
-
 }
 
 .avatar {
-
 }
 
 .dogprofile {
-padding: 16px;
-display: flex;
+  padding: 16px;
+  display: flex;
 }
 
 .doginfo {
   display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    margin: 0px -3px -5px;
-    line-height: 22px;
-
-  
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 8px;
 }
 
 .tags {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0px -3px -5px;
 }
