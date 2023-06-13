@@ -25,10 +25,13 @@ display: flex;
 }
 
 .doginfo {
-  display: inline-block;
-  padding-left: 8px;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0px -3px -5px;
+    line-height: 22px;
+
+  
 }
 
 .tags {

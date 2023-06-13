@@ -5,8 +5,12 @@ import "./style.css"
 import Avatar from "../../Base/Avatar"
 import Badge from "../../Base/Badge"
 import Tag from "../../Base/Tag"
+import React, {useState} from "react";
+
+
 
 function Tutor ({name, description, avatarSrc, badgeSrc}){
+    const [buttonClicked, buttonClick] = useState("no button clicked");
     return(
     <div>
         <div className = "dogprofile">
@@ -15,6 +19,7 @@ function Tutor ({name, description, avatarSrc, badgeSrc}){
             </div>
             <div className = "doginfo">
                 <Title text = {name}/>
+                <Title text = {buttonClicked}/>
                 <Badge src = {badgeSrc}/>
                 <div className = "tags">
                     <Tag text={"1000+ tail wags"}/>
@@ -29,8 +34,8 @@ function Tutor ({name, description, avatarSrc, badgeSrc}){
             <Text text = {description}/>
         </div>
         <div className = "dogsbutton">
-            <Button text = "Porra!!! " type = "action"/>
-            <Button text = "Caralho!!! "/>
+            <Button onClick={() => buttonClick("porra")} text = "Porra!!! " type = "action"/>
+            <Button onClick={() => {console.log("caralho")}} text = "Caralho!!! "/>
         </div>
     </div>
     )

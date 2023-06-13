@@ -12,6 +12,7 @@ function App() {
     {Name: "Filo", Description: "Hello peasants, I am your god forsaken leader. Bow down to me, imbeciles", avatarSrc: "https://www.petlandhoffmanestates.com/wp-content/uploads/2021/11/pug-300x300.png", badgeSrc: BadgeUN}, 
     {Name: "Luna", Description: "Haiiiiii, I'm Luna and I love everything and everyone.", avatarSrc: "https://breed-assets.wisdompanel.com/dog/rottweiler/Rottweiler1.png", badgeSrc: BadgeSouthAfrica}, 
 ];
+
   return (
     <div className="App">
       <header className="App-header">
