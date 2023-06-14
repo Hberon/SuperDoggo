@@ -10,7 +10,7 @@ import Heart from "../../Base/Heart";
 
 function Tutor({ name, description, avatarSrc, badgeSrc }) {
   const [isFavorite, setFavorite] = useState(false);
-    return (
+  return (
     <div>
       <div className="dogprofile">
         <div className="avatar">
@@ -18,7 +18,7 @@ function Tutor({ name, description, avatarSrc, badgeSrc }) {
         </div>
         <div className="doginfo">
           <Title text={name} />
-          <Heart isFavorite={isFavorite} setFavorite={setFavorite}/> 
+          <Heart isFavorite={isFavorite} setFavorite={setFavorite} />
           <Badge src={badgeSrc} />
           <div className="tags">
             <Tag text={"1000+ tail wags"} />
@@ -30,10 +30,7 @@ function Tutor({ name, description, avatarSrc, badgeSrc }) {
         <Text text={description} />
       </div>
       <div className="dogsbutton">
-        <Button
-          text="Porra!!! "
-          type="action"
-        />
+        <Button text="Porra!!! " type="action" />
         <Button text="Caralho!!! " />
       </div>
     </div>

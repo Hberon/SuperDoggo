@@ -1,16 +1,18 @@
 .Corazon {
-    fill: currentColor;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    font-size: 2.4rem;
-    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    flex-shrink: 0;
-    user-select: none;
-    color: rgb(119, 119, 119);
-    font-size: 25px;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 2.4rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  color: rgb(119, 119, 119);
+  font-size: 25px;
 }
 
 .Corazon-wrapper {
-    color: #282c34;
+  background-color: #282c34;
+  border: 0;
+  cursor: pointer;
 }
