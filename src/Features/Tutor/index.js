@@ -18,13 +18,14 @@ function Tutor({ name, description, avatarSrc, badgeSrc }) {
         </div>
         <div className="doginfo">
           <Title text={name} />
-          <Heart isFavorite={isFavorite} setFavorite={setFavorite} />
           <Badge src={badgeSrc} />
           <div className="tags">
             <Tag text={"1000+ tail wags"} />
             <Tag text={"Superdoggo"} showhat={true} />
           </div>
         </div>
+        <div className ="heartposition">
+          <Heart isFavorite={isFavorite} setFavorite={setFavorite} /></div>
       </div>
       <div className="dogsdescription">
         <Text text={description} />
