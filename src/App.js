@@ -6,6 +6,8 @@ import BadgeSouthAfrica from './Resources/Images/ZA.png';
 import BadgeUN from './Resources/Images/082-united-nations.png';
 import BadgeAU from './Resources/Images/AU.png';
 import React, { useState } from "react";
+import { reorder, filterByName } from './Helpers/app.helper';
+
 
 
 function App() {
@@ -15,12 +17,9 @@ function App() {
     {Name: "Luna", Description: "Haiiiiii, I'm Luna and I love everything and everyone.", avatarSrc: "https://breed-assets.wisdompanel.com/dog/rottweiler/Rottweiler1.png", badgeSrc: BadgeSouthAfrica}, 
 ];
 const [filtered, filter] = useState(dogs);
-const filterByName = (event) => {
- 
-  const typedValue = event.target.value.toLowerCase();
-  const newDogs =dogs.filter(dog=> dog.Name.toLowerCase().includes(typedValue));
-   filter(newDogs)
-}
+
+
+
 
   return (
     <div className="App">
@@ -29,10 +28,13 @@ const filterByName = (event) => {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p>
+        <div>
+          <p>
           filter by name
-          <input type = "text" onChange={(e)=> filterByName(e)}/>
-        </p>
+          <input type = "text" onChange={(e)=> filterByName(e, filter, dogs)}/>
+          <button onClick={()=> reorder (filter, filtered)}>Reorder</button>
+          </p>
+        </div>
         <div
         >
           {

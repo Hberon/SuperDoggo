@@ -32,7 +32,7 @@ function Tutor({ name, description, avatarSrc, badgeSrc }) {
       </div>
       <div className="dogsbutton">
         <Button text="Porra!!! " type="action" />
-        <Button text="Caralho!!! " />
+        <Button onClick = {()=> console.log("caramba")} text="Caralho!!! " />
       </div>
     </div>
   );
