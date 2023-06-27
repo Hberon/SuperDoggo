@@ -1,10 +1,9 @@
 export const reorder = (filter, filtered) => { 
-    var newDogs = [...filtered]; 
-    const firstDog = newDogs[0];
-    newDogs[0] = newDogs[1];
-    newDogs[1] = newDogs[2]
-    newDogs[2] = firstDog;
-    filter(newDogs);
+  const newArray = filtered.slice(); 
+  for (let i = 0; i < newArray.length-1; i++) {
+    [newArray[i], newArray[i+1]] = [newArray[i+1], newArray[i]];
+  }
+  filter(newArray);
   }
 
   export const filterByName = (event, filter, dogs) => {
@@ -12,3 +11,5 @@ export const reorder = (filter, filtered) => {
     const newDogs =dogs.filter(dog=> dog.Name.toLowerCase().includes(typedValue));
      filter(newDogs)
   }
+
+  

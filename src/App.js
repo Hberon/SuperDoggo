@@ -5,7 +5,7 @@ import Box from './Base/Box';
 import BadgeSouthAfrica from './Resources/Images/ZA.png';
 import BadgeUN from './Resources/Images/082-united-nations.png';
 import BadgeAU from './Resources/Images/AU.png';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { reorder, filterByName } from './Helpers/app.helper';
 
 
@@ -18,8 +18,13 @@ function App() {
 ];
 const [filtered, filter] = useState(dogs);
 
-
-
+useEffect(()=>{
+  const interval = setInterval(()=>{
+  reorder (filter, [...filtered]);
+  },30000);
+  return ()=>clearInterval(interval);
+  
+},[filtered]); 
 
   return (
     <div className="App">
