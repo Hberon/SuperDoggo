@@ -7,6 +7,7 @@ import BadgeUN from './Resources/Images/082-united-nations.png';
 import BadgeAU from './Resources/Images/AU.png';
 import React, { useState, useEffect } from "react";
 import { reorder, filterByName } from './Helpers/app.helper';
+import axios from 'axios';
 
 
 
@@ -18,6 +19,17 @@ function App() {
 ];
 const [filtered, filter] = useState(dogs);
 
+const api = axios.create({
+  baseURL: "https://www.purina.com",
+});
+
+let config = {
+  headers: {
+    "Accept": "*/*"
+  }
+};
+
+api.get ("/page-data/dogs/dog-breeds/page-data.json", config).then((response)=>console.log(response.data))
 useEffect(()=>{
   const interval = setInterval(()=>{
   reorder (filter, [...filtered]);
