@@ -49,7 +49,7 @@ function App() {
   };
 
   api
-    .get("/posts", config)
+    .get("/users/2", config)
     .then((response) => {
       console.log(response.data);
     })
